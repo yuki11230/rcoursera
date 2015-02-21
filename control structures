@@ -1,0 +1,24 @@
+if (x<4){y<-10} else if(x==4){y=11}else{y<-5}
+x<-c("a","b","c","d")
+for (i in 1:4) {print(x[i])}
+for (i in seq_along(x)) {print(x[i])}***seq_along produces the vector of indices of a given vector
+***seq_along(x) takes a vector for x, and it creates a sequence upto the count of elements in the vector.
+ seq_len(y) takes numeric for y, it creates a sequence upto the number y****
+**a <- c(8, 9, 10)
+b <- c(9, 10)
+c <- 10
+seq_along(a)
+# [1] 1 2 3
+seq_along(b)
+# [1] 1 2
+seq_along(c)
+# [1] 1**
+for (letter in x){print (letter)}
+for (i in seq_len(nrow(x))) {for (j in seq_len(ncol(x))) {print (x[i:j])}}
+while (count<10) {print(count);count<-count+1}
+for (i in 1:length(foo)) {#stuff to do the number of times that foo is long}
+#set default value#
+foo.squared = numeric(length=50) #generates a vector of 50 zeros
+bar.squared = rep(NA, 200000)
+while(z>=3 & z<=10) {print(z); coin<-rbinom(1,1,0.5);if (coin==1) {z<-z+1} else {z<-z-1}}
+

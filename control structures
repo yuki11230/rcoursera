@@ -21,4 +21,9 @@ for (i in 1:length(foo)) {#stuff to do the number of times that foo is long}
 foo.squared = numeric(length=50) #generates a vector of 50 zeros
 bar.squared = rep(NA, 200000)
 while(z>=3 & z<=10) {print(z); coin<-rbinom(1,1,0.5);if (coin==1) {z<-z+1} else {z<-z-1}}
-
+for (i in 1:4) {if (i<=2) {next};print(x[i])}# next# skip an inretation of a loop
+ make.power<-function(n){pow<-function(x) {x^n} ;pow} 
+cube<-make.power(3)
+square<-make.power(2)
+cube(3)
+square(2)

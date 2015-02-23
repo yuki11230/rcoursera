@@ -1,0 +1,10 @@
+# gl(n, k, length = n*k, labels = seq_len(n), ordered = FALSE) Generate factors by specifying the pattern of their levels.
+## First control, then treatment:
+gl(2, 8, labels = c("Control", "Treat"))
+## 20 alternating 1s and 2s
+gl(2, 1, 20)
+## alternating pairs of 1s and 2s
+gl(2, 2, 20)
+#diffrece of an array and  vector
+a<-array(rnorm(2*2*10),c(2,2,10))
+b<-rnorm(2*2*10)

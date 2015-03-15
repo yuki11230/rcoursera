@@ -1,0 +1,28 @@
+cube <- function(x, n) {bad<-is.na(y)
+y[bad]
+mean(y, na.rm=TRUE)
+y<-subset(x, Ozone > 31 & Temp > 90)
+y<-subset(x, Month==6)
+max(z, na.rm=TRUE)
+#dowlaod online dataset
+dataset_url <- "http://s3.amazonaws.com/practice_assignment/diet_data.zip"
+download.file(dataset_url, "diet_data.zip")
+unzip("diet_data.zip", exdir = "diet_data")
+#list files in a folder
+list.files("diet_data")
+ #read a file into R
+andy <- read.csv("diet_data/Andy.csv")
+head(andy)
+#figure out how many rows
+length(andy$Day)
+#dimensions of the data.frame str(), summary(), and names()
+dim(andy)
+#subset the dataset
+andy[1, "Weight"]#see Andy’s starting weight
+andy[30,"Weight"]#final weight on Day 30
+andy[which(andy$Day == 30), "Weight"]
+subset(andy$Weight, andy$Day==30)
+#cbind all the files
+#fullfiles<-list.files("diet_data")
+fullfiles<-list.files("diet_data",full.names=TRUE)
+andy_david<-rbind(andy,read.csv(fullfiles[2]))

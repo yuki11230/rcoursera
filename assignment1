@@ -26,3 +26,6 @@ subset(andy$Weight, andy$Day==30)
 #fullfiles<-list.files("diet_data")
 fullfiles<-list.files("diet_data",full.names=TRUE)
 andy_david<-rbind(andy,read.csv(fullfiles[2]))
+dat <- data.frame()
+for (i in 1:5) {
+dat <- rbind(dat, read.csv(files_full[i]))｝
